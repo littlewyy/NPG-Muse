@@ -20,7 +20,7 @@ sudo dnf install -y libXrender libXext libSM
 # 3. 如果没有sudo权限，则用conda安装
 conda install -y -c conda-forge libxrender libxext libsm
 ```
-> 待补充：下载通过gdown下载npg_muse_attachments并解压到指定位置
+> 待补充：通过gdown下载npg_muse_attachments并解压到指定位置
 ## 小规模验证训练脚本
 分别运行以下两个命令（各自都只有5个step，如果运行完后能在`verl/npg_muse_attachments/rl_models`中找到相应的模型，说明跑起来没问题）
 ```bash
