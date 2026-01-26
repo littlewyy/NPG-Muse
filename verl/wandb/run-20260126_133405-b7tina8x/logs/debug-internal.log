@@ -1,0 +1,111 @@
+{"time":"2026-01-26T05:34:06.647117383Z","level":"INFO","msg":"stream: starting","core version":"0.24.0"}
+{"time":"2026-01-26T05:34:07.176391987Z","level":"INFO","msg":"stream: created new stream","id":"b7tina8x"}
+{"time":"2026-01-26T05:34:07.176649481Z","level":"INFO","msg":"handler: started","stream_id":"b7tina8x"}
+{"time":"2026-01-26T05:34:07.17769245Z","level":"INFO","msg":"stream: started","id":"b7tina8x"}
+{"time":"2026-01-26T05:34:07.177823764Z","level":"INFO","msg":"sender: started","stream_id":"b7tina8x"}
+{"time":"2026-01-26T05:34:07.17783711Z","level":"INFO","msg":"writer: started","stream_id":"b7tina8x"}
+{"time":"2026-01-26T05:49:15.657094821Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":171}
+{"time":"2026-01-26T05:49:15.790239646Z","level":"ERROR","msg":"flowcontrol: failed reading after 0 records: transactionlog: bad header: leveldb/record: reader not in first block","chunk":{"InitialOffset":322078,"InitialNumber":171,"Count":236}}
+{"time":"2026-01-26T05:49:15.791500454Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":236}
+{"time":"2026-01-26T05:49:19.162286568Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T05:51:44.41692989Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T05:58:29.912937083Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T06:01:53.124017297Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.0002515,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T06:01:53.124014119Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000632044,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:02:07.644050364Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000085449,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:02:07.645132311Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000264544,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:04:48.287573237Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":775.163788788,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T06:04:48.287559989Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":775.164134028,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:04:48.297923259Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":760.653926278,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:04:48.298008088Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":760.653141861,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:04:48.309524404Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T06:08:11.358870982Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T06:18:11.775236004Z","level":"WARN","msg":"sender: taking a long time","seconds":600.001041658,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:18:11.775239461Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000930142,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T06:18:22.644251554Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000517584,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:18:22.645306967Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000683333,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:21:56.838208716Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T06:28:11.776830792Z","level":"WARN","msg":"sender: taking a long time","seconds":1200.002617372,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:28:11.777929942Z","level":"WARN","msg":"runwork: taking a long time","seconds":1200.003641235,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T06:28:22.644707762Z","level":"WARN","msg":"runwork: taking a long time","seconds":1200.000984808,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:28:22.648853111Z","level":"WARN","msg":"runwork: taking a long time","seconds":1200.004240315,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:35:09.932868776Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":1618.158602583,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T06:35:09.932849496Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":1618.158633008,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:35:09.940511748Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T06:38:22.64552084Z","level":"WARN","msg":"runwork: taking a long time","seconds":1800.001802451,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:38:22.649664203Z","level":"WARN","msg":"runwork: taking a long time","seconds":1800.005045838,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:45:09.93450145Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000155043,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T06:45:09.934558798Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000194089,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:46:14.814860555Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":664.88063808,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:46:14.815017827Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":664.880819183,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T06:46:14.815028427Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":2272.171312818,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:46:14.815053639Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":2272.170407452,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T06:46:14.8218021Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T06:53:54.306974533Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T06:58:28.73619079Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T07:10:08.742297497Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T07:17:30.835984984Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T07:30:52.646218661Z","level":"WARN","msg":"sender: taking a long time","seconds":600.001074892,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T07:40:52.648268205Z","level":"WARN","msg":"sender: taking a long time","seconds":1200.003105462,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T07:46:43.757428076Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000390617,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T07:46:52.644474689Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000681463,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T07:46:52.644653198Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000063868,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T07:50:52.66266635Z","level":"WARN","msg":"sender: taking a long time","seconds":1800.017504499,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T07:56:43.759941481Z","level":"WARN","msg":"runwork: taking a long time","seconds":1200.002844447,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T07:56:52.644907854Z","level":"WARN","msg":"runwork: taking a long time","seconds":1200.000280695,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T07:56:52.644963556Z","level":"WARN","msg":"runwork: taking a long time","seconds":1200.001146138,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T07:57:38.288636516Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":2205.643462376,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T07:57:38.28876223Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":1245.644118593,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T07:57:38.288776476Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":1254.531740149,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T07:57:38.30504493Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T08:06:52.645268829Z","level":"WARN","msg":"runwork: taking a long time","seconds":1800.001444594,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:07:38.290001743Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.00083286,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T08:07:38.290177413Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000161675,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:07:38.2932376Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000433061,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:16:52.64748488Z","level":"WARN","msg":"runwork: taking a long time","seconds":2400.003669851,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:17:38.290376063Z","level":"WARN","msg":"runwork: taking a long time","seconds":1200.001094807,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T08:17:38.291379205Z","level":"WARN","msg":"sender: taking a long time","seconds":1200.001306175,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:17:38.293460493Z","level":"WARN","msg":"runwork: taking a long time","seconds":1200.000644636,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:26:52.648810815Z","level":"WARN","msg":"runwork: taking a long time","seconds":3000.00499217,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:27:38.291169037Z","level":"WARN","msg":"runwork: taking a long time","seconds":1800.001997858,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T08:27:38.293334144Z","level":"WARN","msg":"sender: taking a long time","seconds":1800.003280964,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:27:38.294389656Z","level":"WARN","msg":"runwork: taking a long time","seconds":1800.001607966,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:34:49.034426019Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":3476.390646105,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:34:49.034390797Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":2230.744291402,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:34:49.047914129Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T08:37:38.291955149Z","level":"WARN","msg":"runwork: taking a long time","seconds":2400.002753126,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T08:37:38.295082392Z","level":"WARN","msg":"runwork: taking a long time","seconds":2400.002278283,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:44:49.036697344Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000812256,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:44:49.040789352Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000682954,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:47:38.293364736Z","level":"WARN","msg":"runwork: taking a long time","seconds":3000.004182368,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T08:47:38.295481985Z","level":"WARN","msg":"runwork: taking a long time","seconds":3000.002663718,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:54:49.038387937Z","level":"WARN","msg":"sender: taking a long time","seconds":1200.002539911,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:54:49.042515752Z","level":"WARN","msg":"runwork: taking a long time","seconds":1200.002409556,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T08:57:38.293873817Z","level":"WARN","msg":"runwork: taking a long time","seconds":3600.004535219,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T08:57:38.295848455Z","level":"WARN","msg":"runwork: taking a long time","seconds":3600.003038919,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:04:49.040887968Z","level":"WARN","msg":"sender: taking a long time","seconds":1800.004920026,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:04:49.043896732Z","level":"WARN","msg":"runwork: taking a long time","seconds":1800.003796397,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:12:47.505014313Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":2278.464872108,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:12:47.505018861Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":2278.469172226,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:12:47.517345646Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T09:22:47.506763411Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000214169,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:22:47.508885426Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000398902,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:32:47.515330319Z","level":"WARN","msg":"sender: taking a long time","seconds":1200.008865887,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:32:47.515334306Z","level":"WARN","msg":"runwork: taking a long time","seconds":1200.006890843,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:42:47.516827931Z","level":"WARN","msg":"runwork: taking a long time","seconds":1800.008375557,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:42:47.516828227Z","level":"WARN","msg":"sender: taking a long time","seconds":1800.010423563,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:46:53.020102208Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":2045.513667172,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:46:53.0201474Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":6554.730981005,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T09:46:53.035109849Z","level":"INFO","msg":"filestream: waiting to send request of max size"}
+{"time":"2026-01-26T09:52:47.518434879Z","level":"WARN","msg":"runwork: taking a long time","seconds":2400.009936122,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T09:56:53.022124735Z","level":"WARN","msg":"runwork: taking a long time","seconds":600.000345518,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T09:56:53.022163537Z","level":"WARN","msg":"sender: taking a long time","seconds":600.000776526,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T10:02:47.520862548Z","level":"WARN","msg":"runwork: taking a long time","seconds":3000.012381818,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T10:06:53.023201297Z","level":"WARN","msg":"runwork: taking a long time","seconds":1200.001419608,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T10:06:53.023399932Z","level":"WARN","msg":"sender: taking a long time","seconds":1200.002091595,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T10:12:47.523257286Z","level":"WARN","msg":"runwork: taking a long time","seconds":3600.014782315,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T10:16:53.024109394Z","level":"WARN","msg":"runwork: taking a long time","seconds":1800.002331559,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"1(@)\")"}
+{"time":"2026-01-26T10:16:53.024589164Z","level":"WARN","msg":"sender: taking a long time","seconds":1800.003281691,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T10:18:00.063098309Z","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":3912.554681918,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T10:18:00.063084391Z","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":1867.041672634,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2026-01-26T10:18:00.099341016Z","level":"INFO","msg":"filestream: waiting to send request of max size"}

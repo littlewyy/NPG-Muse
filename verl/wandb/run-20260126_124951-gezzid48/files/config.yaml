@@ -1,0 +1,515 @@
+_wandb:
+    value:
+        cli_version: 0.24.0
+        e:
+            z6pvvnogl2vmrgv4idndz6w1tjwbj0jg:
+                args:
+                    - --node-ip-address=172.17.0.2
+                    - --node-manager-port=38069
+                    - --object-store-name=/tmp/ray/session_2026-01-26_12-47-45_971061_2292880/sockets/plasma_store
+                    - --raylet-name=/tmp/ray/session_2026-01-26_12-47-45_971061_2292880/sockets/raylet
+                    - --redis-address=None
+                    - --metrics-agent-port=54710
+                    - --logging-rotate-bytes=536870912
+                    - --logging-rotate-backup-count=5
+                    - --runtime-env-agent-port=62303
+                    - --gcs-address=172.17.0.2:53224
+                    - --session-name=session_2026-01-26_12-47-45_971061_2292880
+                    - --temp-dir=/tmp/ray
+                    - --webui=127.0.0.1:8265
+                    - --cluster-id=47e56b74529cecbd0f08d0739b3392885a68fe3171f9fe45cf0349cb
+                    - --startup-token=64
+                    - --worker-launch-time-ms=1769402870162
+                    - --node-id=cf3a5d1c096c405bc5134ca0f1dfdb8c5e8438448a35c0ed8aae7c8a
+                    - --runtime-env-hash=-2054348966
+                cpu_count: 64
+                cpu_count_logical: 64
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "844362571776"
+                        used: "415532355584"
+                email: 1377143236@qq.com
+                executable: /hpc2hdd/home/mpeng885/jerryjiawenl/henansun/anaconda3/envs/npg-muse/bin/python3
+                gpu: NVIDIA A800-SXM4-80GB
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A800-SXM4-80GB
+                      uuid: GPU-1b9dc668-af54-1bde-cb7a-2c653bfeefc2
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A800-SXM4-80GB
+                      uuid: GPU-63de14f8-d6a3-0038-3751-4136a13e585d
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A800-SXM4-80GB
+                      uuid: GPU-9d12b324-9004-f5e5-c681-6e239ca1e566
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A800-SXM4-80GB
+                      uuid: GPU-04f7d337-26b4-ace9-6cc9-25c591917347
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A800-SXM4-80GB
+                      uuid: GPU-5dd79220-7190-2bb2-5b68-1c6df7a8d42d
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A800-SXM4-80GB
+                      uuid: GPU-0bbae911-c409-921a-0c4a-95c879575602
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A800-SXM4-80GB
+                      uuid: GPU-7def2208-8c97-2a0b-87d4-71aa5751d327
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A800-SXM4-80GB
+                      uuid: GPU-e071fda3-d580-8a2d-27af-153697d44aba
+                host: e4d660fc861d
+                memory:
+                    total: "1081840553984"
+                os: Linux-5.4.0-155-generic-x86_64-with-glibc2.35
+                program: /hpc2hdd/home/mpeng885/jerryjiawenl/henansun/anaconda3/envs/npg-muse/lib/python3.10/site-packages/ray/_private/workers/default_worker.py
+                python: CPython 3.10.19
+                root: /hpc2hdd/home/mpeng885/wyy/NPG_Muse-copy/verl
+                startedAt: "2026-01-26T04:49:51.486255Z"
+                writerId: z6pvvnogl2vmrgv4idndz6w1tjwbj0jg
+        m: []
+        python_version: 3.10.19
+        t:
+            "1":
+                - 1
+                - 11
+                - 30
+                - 41
+                - 49
+                - 50
+                - 51
+                - 71
+                - 98
+                - 105
+            "2":
+                - 1
+                - 11
+                - 30
+                - 41
+                - 49
+                - 50
+                - 51
+                - 71
+                - 98
+                - 105
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.10.19
+            "5": 0.24.0
+            "6": 4.51.1
+            "8":
+                - 2
+            "12": 0.24.0
+            "13": linux-x86_64
+actor_rollout_ref:
+    value:
+        actor:
+            _target_: verl.workers.config.FSDPActorConfig
+            checkpoint:
+                _target_: verl.trainer.config.CheckpointConfig
+                async_save: false
+                load_contents:
+                    - model
+                    - optimizer
+                    - extra
+                save_contents:
+                    - model
+                    - optimizer
+                    - extra
+            clip_ratio: 0.2
+            clip_ratio_c: 3
+            clip_ratio_high: 0.2
+            clip_ratio_low: 0.2
+            entropy_checkpointing: false
+            entropy_coeff: 0
+            entropy_from_logits_with_chunking: false
+            fsdp_config:
+                _target_: verl.workers.config.FSDPEngineConfig
+                forward_prefetch: false
+                fsdp_size: -1
+                offload_policy: false
+                optimizer_offload: false
+                param_offload: false
+                reshard_after_forward: true
+                wrap_policy:
+                    min_num_params: 0
+            grad_clip: 1
+            kl_loss_coef: 0.001
+            kl_loss_type: low_var_kl
+            loss_agg_mode: token-mean
+            optim:
+                _target_: verl.workers.config.FSDPOptimizerConfig
+                lr: 1e-06
+                lr_warmup_steps: -1
+                lr_warmup_steps_ratio: 0
+                min_lr_ratio: 0
+                num_cycles: 0.5
+                total_training_steps: 1
+                warmup_style: constant
+                weight_decay: 0.01
+            policy_loss:
+                _target_: verl.workers.config.PolicyLossConfig
+                clip_cov_lb: 1
+                clip_cov_ratio: 0.0002
+                clip_cov_ub: 5
+                kl_cov_ratio: 0.0002
+                loss_mode: vanilla
+                ppo_kl_coef: 0.1
+            ppo_epochs: 1
+            ppo_max_token_len_per_gpu: 16384
+            ppo_micro_batch_size: null
+            ppo_micro_batch_size_per_gpu: 8
+            ppo_mini_batch_size: 32
+            shuffle: false
+            strategy: fsdp
+            ulysses_sequence_parallel_size: 4
+            use_dynamic_bsz: false
+            use_fused_kernels: false
+            use_kl_loss: true
+            use_remove_padding: true
+            use_torch_compile: true
+        hybrid_engine: true
+        model:
+            custom_chat_template: null
+            enable_activation_offload: false
+            enable_gradient_checkpointing: true
+            exclude_modules: null
+            external_lib: null
+            fused_kernel_options:
+                impl_backend: torch
+            lora_alpha: 16
+            lora_rank: 0
+            path: npg_muse_attachments/sft_models/qwen3_sft_6np
+            target_modules: all-linear
+            trust_remote_code: false
+            use_fused_kernels: false
+            use_liger: false
+            use_remove_padding: true
+            use_shm: false
+        profiler:
+            _target_: verl.utils.profiler.ProfilerConfig
+            all_ranks: false
+            discrete: false
+            ranks: []
+        ref:
+            entropy_checkpointing: false
+            entropy_from_logits_with_chunking: false
+            fsdp_config:
+                _target_: verl.workers.config.FSDPEngineConfig
+                forward_prefetch: false
+                param_offload: false
+                reshard_after_forward: true
+                wrap_policy:
+                    min_num_params: 0
+            log_prob_max_token_len_per_gpu: 16384
+            log_prob_micro_batch_size: null
+            log_prob_micro_batch_size_per_gpu: 8
+            log_prob_use_dynamic_bsz: false
+            strategy: fsdp
+            ulysses_sequence_parallel_size: 4
+            use_torch_compile: true
+        rollout:
+            agent:
+                agent_loop_config_path: null
+                custom_async_server:
+                    name: null
+                    path: null
+                num_workers: 8
+            calculate_log_probs: false
+            disable_log_stats: true
+            do_sample: true
+            dtype: bfloat16
+            enable_chunked_prefill: true
+            enforce_eager: true
+            engine_kwargs:
+                sglang:
+                    attention_backend: null
+                vllm:
+                    disable_mm_preprocessor_cache: false
+                    swap_space: null
+            free_cache_engine: true
+            gpu_memory_utilization: 0.8
+            ignore_eos: false
+            layered_summon: false
+            load_format: dummy_dtensor
+            log_prob_max_token_len_per_gpu: 16384
+            log_prob_micro_batch_size: null
+            log_prob_micro_batch_size_per_gpu: 8
+            log_prob_use_dynamic_bsz: false
+            max_model_len: null
+            max_num_batched_tokens: 13192
+            max_num_seqs: 1024
+            mode: sync
+            multi_stage_wake_up: false
+            multi_turn:
+                enable: false
+                format: hermes
+                interaction_config_path: null
+                max_assistant_turns: null
+                max_parallel_calls: 1
+                max_tool_response_length: 256
+                max_user_turns: null
+                tokenization_sanity_check_mode: strict
+                tool_config_path: null
+                tool_response_truncate_side: middle
+                use_inference_chat_template: false
+            "n": 8
+            name: vllm
+            prompt_length: 5000
+            response_length: 8192
+            temperature: 1
+            tensor_model_parallel_size: 1
+            top_k: -1
+            top_p: 1
+            trace:
+                backend: null
+                token2text: false
+            update_weights_bucket_megabytes: 512
+            val_kwargs:
+                do_sample: false
+                "n": 1
+                temperature: 0.8
+                top_k: -1
+                top_p: 1
+algorithm:
+    value:
+        _target_: verl.trainer.config.AlgoConfig
+        adv_estimator: grpo
+        gamma: 1
+        kl_ctrl:
+            _target_: verl.trainer.config.KLControlConfig
+            horizon: 10000
+            kl_coef: 0.001
+            target_kl: 0.1
+            type: fixed
+        kl_penalty: kl
+        lam: 1
+        norm_adv_by_std_in_grpo: true
+        pf_ppo:
+            reweight_method: pow
+            weight_pow: 2
+        use_kl_in_reward: false
+        use_pf_ppo: false
+critic:
+    value:
+        _target_: verl.workers.config.FSDPCriticConfig
+        checkpoint:
+            _target_: verl.trainer.config.CheckpointConfig
+            async_save: false
+            load_contents:
+                - model
+                - optimizer
+                - extra
+            save_contents:
+                - model
+                - optimizer
+                - extra
+        cliprange_value: 0.5
+        enable: null
+        forward_max_token_len_per_gpu: 32768
+        forward_micro_batch_size: null
+        forward_micro_batch_size_per_gpu: null
+        grad_clip: 1
+        loss_agg_mode: token-mean
+        model:
+            _target_: verl.workers.config.FSDPCriticModelCfg
+            enable_activation_offload: false
+            enable_gradient_checkpointing: true
+            external_lib: null
+            fsdp_config:
+                _target_: verl.workers.config.FSDPEngineConfig
+                forward_prefetch: false
+                fsdp_size: -1
+                offload_policy: false
+                optimizer_offload: false
+                param_offload: false
+                reshard_after_forward: true
+                wrap_policy:
+                    min_num_params: 0
+            lora_alpha: 16
+            lora_rank: 0
+            path: ~/models/deepseek-llm-7b-chat
+            target_modules: all-linear
+            tokenizer_path: npg_muse_attachments/sft_models/qwen3_sft_6np
+            trust_remote_code: false
+            use_remove_padding: false
+            use_shm: false
+        optim:
+            _target_: verl.workers.config.FSDPOptimizerConfig
+            lr: 1e-05
+            lr_warmup_steps: -1
+            lr_warmup_steps_ratio: 0
+            min_lr_ratio: null
+            total_training_steps: 1
+            warmup_style: constant
+            weight_decay: 0.01
+        ppo_epochs: 1
+        ppo_max_token_len_per_gpu: 32768
+        ppo_micro_batch_size: null
+        ppo_micro_batch_size_per_gpu: null
+        ppo_mini_batch_size: 32
+        profiler:
+            _target_: verl.utils.profiler.ProfilerConfig
+            all_ranks: false
+            discrete: false
+            ranks: []
+        rollout_n: 8
+        shuffle: false
+        strategy: fsdp
+        ulysses_sequence_parallel_size: 1
+        use_dynamic_bsz: false
+custom_reward_function:
+    value:
+        name: compute_score
+        path: null
+data:
+    value:
+        custom_cls:
+            name: null
+            path: null
+        datagen:
+            name: null
+            path: null
+        dataloader_num_workers: 8
+        filter_overlong_prompts: true
+        filter_overlong_prompts_workers: 1
+        image_key: images
+        max_prompt_length: 5000
+        max_response_length: 8192
+        prompt_key: prompt
+        return_full_prompt: false
+        return_multi_modal_inputs: true
+        return_raw_chat: false
+        return_raw_input_ids: false
+        reward_fn_key: data_source
+        sampler:
+            class_name: null
+            class_path: null
+        shuffle: true
+        tokenizer: null
+        train_batch_size: 128
+        train_files:
+            - ./npg_muse_attachments/training_data/RL_data/reward_binary/train_graph_6np_level_1_150.parquet
+        truncation: error
+        trust_remote_code: false
+        use_shm: false
+        val_batch_size: null
+        val_files:
+            - ./npg_muse_attachments/training_data/RL_data/reward_binary/valid_graph.parquet
+        validation_shuffle: false
+        video_key: videos
+ray_init:
+    value:
+        num_cpus: null
+        timeline_json_file: null
+reward_model:
+    value:
+        enable: false
+        forward_max_token_len_per_gpu: 32768
+        launch_reward_fn_async: false
+        max_length: null
+        micro_batch_size: null
+        micro_batch_size_per_gpu: null
+        model:
+            external_lib: null
+            fsdp_config:
+                _target_: verl.workers.config.FSDPEngineConfig
+                forward_prefetch: false
+                fsdp_size: -1
+                param_offload: false
+                reshard_after_forward: true
+                wrap_policy:
+                    min_num_params: 0
+            input_tokenizer: npg_muse_attachments/sft_models/qwen3_sft_6np
+            path: ~/models/FsfairX-LLaMA3-RM-v0.1
+            trust_remote_code: false
+            use_fused_kernels: false
+            use_remove_padding: false
+            use_shm: false
+        profiler:
+            _target_: verl.utils.profiler.ProfilerConfig
+            all_ranks: false
+            discrete: false
+            ranks: []
+        reward_manager: naive
+        sandbox_fusion:
+            max_concurrent: 64
+            memory_limit_mb: 1024
+            url: null
+        strategy: fsdp
+        ulysses_sequence_parallel_size: 1
+        use_dynamic_bsz: false
+trainer:
+    value:
+        balance_batch: true
+        controller_nsight_options:
+            cuda-graph-trace: graph
+            cuda-memory-usage: "true"
+            trace: cuda,nvtx,cublas,ucx
+        critic_warmup: 0
+        default_hdfs_dir: null
+        default_local_dir: ./checkpoints/npg-muse-rl/6np_curriculum_binary_qwen3_sft_6np_750
+        del_local_ckpt_after_load: false
+        device: cuda
+        esi_redundant_time: 0
+        experiment_name: 6np_curriculum_binary_qwen3_sft_6np_750
+        log_val_generations: 0
+        logger:
+            - console
+            - wandb
+        max_actor_ckpt_to_keep: null
+        max_critic_ckpt_to_keep: null
+        n_gpus_per_node: 8
+        nnodes: 1
+        npu_profile:
+            options:
+                analysis: true
+                level: level1
+                record_shapes: false
+                roles:
+                    - all
+                save_path: ./profiler_data
+                with_cpu: true
+                with_memory: false
+                with_module: false
+                with_npu: true
+                with_stack: false
+        profile_steps: null
+        project_name: npg-muse-rl
+        ray_wait_register_center_timeout: 300
+        resume_from_path: null
+        resume_mode: disable
+        rollout_data_dir: null
+        save_freq: -1
+        test_freq: 25
+        total_epochs: 1
+        total_training_steps: null
+        use_legacy_worker_impl: auto
+        val_before_train: true
+        val_only: false
+        validation_data_dir: null
+        worker_nsight_options:
+            capture-range: cudaProfilerApi
+            capture-range-end: null
+            cuda-graph-trace: graph
+            cuda-memory-usage: "true"
+            kill: none
+            trace: cuda,nvtx,cublas,ucx

@@ -1,0 +1,16 @@
+{"time":"2026-01-21T14:34:59.321315096Z","level":"INFO","msg":"stream: starting","core version":"0.24.0"}
+{"time":"2026-01-21T14:34:59.925948739Z","level":"INFO","msg":"stream: created new stream","id":"fsjh8yih"}
+{"time":"2026-01-21T14:34:59.926169215Z","level":"INFO","msg":"handler: started","stream_id":"fsjh8yih"}
+{"time":"2026-01-21T14:34:59.9271115Z","level":"INFO","msg":"stream: started","id":"fsjh8yih"}
+{"time":"2026-01-21T14:34:59.927219081Z","level":"INFO","msg":"sender: started","stream_id":"fsjh8yih"}
+{"time":"2026-01-21T14:34:59.927227958Z","level":"INFO","msg":"writer: started","stream_id":"fsjh8yih"}
+{"time":"2026-01-21T15:30:41.323928564Z","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/GraphArena/sft-training/fsjh8yih/file_stream","body":"{\"error\":\"rate limit exceeded: per_run limit on filestream requests\"}"}
+{"time":"2026-01-21T15:34:10.690676897Z","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/GraphArena/sft-training/fsjh8yih/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2026-01-21T17:16:26.438109109Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/GraphArena/sft-training/fsjh8yih/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2026-01-21T18:15:29.79902449Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/GraphArena/sft-training/fsjh8yih/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2026-01-21T19:52:13.846358791Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-01-21T19:52:14.145214931Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-01-21T19:52:14.153778411Z","level":"INFO","msg":"stream: closing","id":"fsjh8yih"}
+{"time":"2026-01-21T19:52:14.153825331Z","level":"INFO","msg":"handler: closed","stream_id":"fsjh8yih"}
+{"time":"2026-01-21T19:52:14.198491201Z","level":"INFO","msg":"sender: closed","stream_id":"fsjh8yih"}
+{"time":"2026-01-21T19:52:14.198560309Z","level":"INFO","msg":"stream: closed","id":"fsjh8yih"}

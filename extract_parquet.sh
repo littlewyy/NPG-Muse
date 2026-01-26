@@ -1,0 +1,1 @@
+python extract_parquet.py --src_path training_data/RL_data/test_graph_and_math_level_1_cleaned.parquet --dst_path training_data/RL_data/valid_graph.parquet
