@@ -147,10 +147,3 @@ bash recipe/NPG-Muse/rl/6np_$BEST_STRATEGY.sh npg_muse_attachments/sft_models/ll
 ```bash
 bash recipe/NPG-Muse/rl/6np_$BEST_STRATEGY.sh npg_muse_attachments/sft_models/g1_sft_6np $BEST_REWARD $BEST_DATA_VOLUME
 ```
-
-# 测试
-> 待完善。分为快速测试(fast)和完整测试(all)两个版本，前者用于快速对比模型性能，后者用于完整结果呈现。
-## 环境配置
-```bash
-
-```
