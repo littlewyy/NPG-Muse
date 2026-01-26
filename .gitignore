@@ -2,10 +2,21 @@
 verl/npg_muse_attachments/
 verl/checkpoints/
 verl/wandb/
+verl/outputs/
+
+# Python 缓存
+__pycache__/
+*.pyc
 
 # Python wheel 文件（使用通配符）
 *.whl
 *.whl.*
+
+# 压缩文件
+*.tar.gz
+*.zip
+*.tar.gz.*
+*.zip.*
 
 # 大文件和日志
 large_files_100M.txt

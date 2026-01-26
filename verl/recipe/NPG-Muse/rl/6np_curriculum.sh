@@ -1,9 +1,12 @@
 #!/bin/bash
 set -x
-# export WANDB_MODE=offline
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+
+# 有关环境的配置，可通过环境变量或参数传递，否则使用默认值
+export CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-"0,1,2,3,4,5,6,7"}
 export RAY_DISABLE_MEMORY_MONITOR=1
 export HYDRA_FULL_ERROR=1
+NNODES=${NNODES:-1}
+N_GPUS_PER_NODE=${N_GPUS_PER_NODE:-8}
 
 BASE_MODEL_PATH=$1 # 从参数中读取模型路径
 REWARD_TYPE=$2 # 从参数中读取reward类型
@@ -53,7 +56,7 @@ DATA_BASE_PATH=./npg_muse_attachments/training_data/RL_data/reward_${REWARD_TYPE
 # Complete BASE_CONFIG (preserve all original parameters)
 BASE_CONFIG="\
     algorithm.adv_estimator=grpo \
-    data.train_batch_size=128 \
+    data.train_batch_size=$BATCH_SIZE \
     data.max_prompt_length=$MAX_PROMPT_LENGTH \
     data.filter_overlong_prompts=True \
     data.truncation='error' \
@@ -82,8 +85,8 @@ BASE_CONFIG="\
     trainer.logger=['console','wandb'] \
     trainer.project_name=$PROJECT_NAME \
     trainer.experiment_name=$EXPERIMENT_NAME \
-    trainer.n_gpus_per_node=8 \
-    trainer.nnodes=1 \
+    trainer.n_gpus_per_node=${N_GPUS_PER_NODE} \
+    trainer.nnodes=${NNODES} \
     trainer.save_freq=${save_freq} \
     trainer.test_freq=${test_freq} \
     trainer.default_local_dir=${CHECKPOINT_DIR} \
@@ -93,11 +96,18 @@ BASE_CONFIG="\
 mkdir -p ${CHECKPOINT_DIR}
 
 echo "======= STARTING FULL CURRICULUM LEARNING ======="
-echo "Total levels to train: ${#LEVELS[@]}"
-echo "Levels: ${LEVELS[@]}"
-echo "Max response lengths: ${MAX_RESPONSE_LENGTHS[@]}"
-echo "Temperatures: ${TEMPERATURES[@]}"
-echo "Checkpoint directory: ${CHECKPOINT_DIR}"
+echo "Environment config:"
+echo "  CUDA_VISIBLE_DEVICES: ${CUDA_VISIBLE_DEVICES}"
+echo "  NNODES: ${NNODES}"
+echo "  N_GPUS_PER_NODE: ${N_GPUS_PER_NODE}"
+echo "  Total GPUs: $((NNODES * N_GPUS_PER_NODE))"
+echo "Training config:"
+echo "  Total levels to train: ${#LEVELS[@]}"
+echo "  Levels: ${LEVELS[@]}"
+echo "  Max response lengths: ${MAX_RESPONSE_LENGTHS[@]}"
+echo "  Temperatures: ${TEMPERATURES[@]}"
+echo "  Batch size: ${BATCH_SIZE}"
+echo "  Checkpoint directory: ${CHECKPOINT_DIR}"
 
 for i in "${!LEVELS[@]}"; do
     level=${LEVELS[$i]}

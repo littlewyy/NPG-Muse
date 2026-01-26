@@ -301,8 +301,8 @@ def compute_score(solution_str: str,
                 ) :
     print("\n" + "="*80)
     
-    print(f"\n[Problem Text]\n{extra_info.get('problem_text')}")
-    print(f"\n[Model Response]\n{solution_str}")
+    # print(f"\n[Problem Text]\n{extra_info.get('problem_text')}")
+    # print(f"\n[Model Response]\n{solution_str}")
     print(f"\n[Ground Truth]\n{extra_info.get('exact_answer')}")
 
     if reward_type == "complicated":

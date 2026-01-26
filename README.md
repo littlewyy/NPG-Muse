@@ -29,9 +29,7 @@ bash recipe/NPG-Muse/rl/6np_mixed.sh npg_muse_attachments/sft_models/qwen3_sft_6
 ```bash
 bash recipe/NPG-Muse/rl/6np_curriculum.sh npg_muse_attachments/sft_models/qwen3_sft_6np binary 750
 ```
-> 如果OOM，修改6np_curriculum.sh和6np_mixed.sh
-- 考虑将SP从4调到8
-- 考虑将OFFLOAD_REF=False改成True
+> PS: 以上默认设置是单机8卡跑，如果多节点跑则设置CUDA_VISIBLE_DEVICES, NNODES，N_GPUS_PER_NODE即可。
 ## 如果卡够多：一次性跑完所有settings，时间短
 ### 1. 先基于qwen3-8b-base，尝试各种训练settings
 > 训练脚本参见train_ablation.sh。为了节约时间，应根据资源情况改为并行执行，并且将6np_curriculum.sh和6np_mixed.sh里面的nnodes和n_gpus_per_node也做相应修改。

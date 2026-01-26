@@ -1,9 +1,11 @@
 #!/bin/bash
 set -x
 # export WANDB_MODE=offline
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+export CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-"0,1,2,3,4,5,6,7"}
 export RAY_DISABLE_MEMORY_MONITOR=1
 export HYDRA_FULL_ERROR=1
+NNODES=${NNODES:-1}
+N_GPUS_PER_NODE=${N_GPUS_PER_NODE:-8}
 
 # Path configuration - please modify according to your actual setup
 BASE_MODEL_PATH=$1 # 从参数中读取模型路径
@@ -90,8 +92,8 @@ BASE_CONFIG="\
     trainer.logger=['console','wandb'] \
     trainer.project_name=$PROJECT_NAME \
     trainer.experiment_name=$EXPERIMENT_NAME \
-    trainer.n_gpus_per_node=8 \
-    trainer.nnodes=1 \
+    trainer.n_gpus_per_node=${N_GPUS_PER_NODE} \
+    trainer.nnodes=${NNODES} \
     trainer.save_freq=${save_freq} \
     trainer.test_freq=${test_freq} \
     trainer.default_local_dir=${CHECKPOINT_DIR} \
