@@ -1,4 +1,4 @@
-# 基于6个NP任务的RL训练和消融
+# RL训练
 ## 安装环境，并进入verl目录
 ```bash
 conda create -n npg-muse python=3.10
@@ -8,19 +8,6 @@ USE_MEGATRON=0 bash scripts/install_vllm_sglang_mcore.sh
 pip install --no-deps -e .
 pip install string-repetition==0.1.0 rdkit walker munkres fast_tsp
 ```
-如果rdkit出现错误`ImportError: libXrender.so.1: cannot open shared object file: No such file or directory`，则:
-```bash
-# 1. Ubuntu / Debian 
-sudo apt-get update
-sudo apt-get install -y libxrender1 libxext6 libsm6
-# 2. CentOS / RHEL / Alma / Rocky
-sudo yum install -y libXrender libXext libSM
-# 或者用 dnf
-sudo dnf install -y libXrender libXext libSM
-# 3. 如果没有sudo权限，则用conda安装
-conda install -y -c conda-forge libxrender libxext libsm
-```
-> 待补充：通过gdown下载npg_muse_attachments并解压到指定位置
 ## 下载基模、数据，运行小规模验证实验
 - 首先安装modelscope
 ```bash
@@ -49,6 +36,18 @@ modelscope download --dataset 'littlewyy/3np_360' valid_graph.parquet --local_di
 cd verl
 export SAVE_FREQ=1
 bash recipe/NPG-Muse/rl/3np_mixed.sh npg_muse_attachments/sft_models/qwen3_sft_3np binary 360
+```
+- 如果rdkit出现错误`ImportError: libXrender.so.1: cannot open shared object file: No such file or directory`，则:
+```bash
+# 1. Ubuntu / Debian 
+sudo apt-get update
+sudo apt-get install -y libxrender1 libxext6 libsm6
+# 2. CentOS / RHEL / Alma / Rocky
+sudo yum install -y libXrender libXext libSM
+# 或者用 dnf
+sudo dnf install -y libXrender libXext libSM
+# 3. 如果没有sudo权限，则用conda安装
+conda install -y -c conda-forge libxrender libxext libsm
 ```
 ## 正式训练（预估时间：5-7天）
 回到仓库根目录，运行以下命令
