@@ -8,8 +8,8 @@
 #     exit 1
 # fi
 
-SRC=verl/npg_muse_attachments/training_data/RL_data/reward_binary/train_graph_6np_all_levels_750.parquet
-DST=verl/npg_muse_attachments/training_data/RL_data/reward_binary/train_graph_3np_all_levels_150.parquet
-SOURCES=("TSP_binary" "MCP_binary" "GED_binary")
+SRC=verl/npg_muse_attachments/training_data/RL_data/reward_complicated/train_graph_6np_all_levels_90000.parquet
+DST=verl/npg_muse_attachments/training_data/RL_data/reward_complicated/train_graph_3np_all_levels_45000.parquet
+SOURCES=("TSP_complicated" "MCP_complicated" "GED_complicated")
 
 python3 extract_by_data_source.py --src "$SRC" --dst "$DST" --sources "${SOURCES[@]}"
