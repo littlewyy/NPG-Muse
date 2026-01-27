@@ -180,7 +180,7 @@ echo "Final checkpoint saved in: ${CHECKPOINT_DIR}"
 
 STEP_PER_LEVEL=$((DATA_PER_LEVEL/${BATCH_SIZE}))
 NUMBER_STEPS=$((STEP_PER_LEVEL*5))
-CHECKPOINT_PATH="${CHECKPOINT_DIR}/global_step_${NUMBER_STEPS}"
+CHECKPOINT_PATH="${CHECKPOINT_DIR}/global_step_${NUMBER_STEPS}/actor"
 if [ ! -d "$CHECKPOINT_PATH" ]; then
     echo "Error: Checkpoint directory not found: $CHECKPOINT_PATH"
     exit 1

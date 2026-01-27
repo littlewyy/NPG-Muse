@@ -132,7 +132,7 @@ echo "======= FULL MIXED TRAINING COMPLETED ======="
 echo "Final checkpoint saved in: ${CHECKPOINT_DIR}" 
 
 NUMBER_STEPS=$((DATA_VOLUME/${BATCH_SIZE}))
-CHECKPOINT_PATH="${CHECKPOINT_DIR}/global_step_${NUMBER_STEPS}"
+CHECKPOINT_PATH="${CHECKPOINT_DIR}/global_step_${NUMBER_STEPS}/actor"
 if [ ! -d "$CHECKPOINT_PATH" ]; then
     echo "Error: Checkpoint directory not found: $CHECKPOINT_PATH"
     exit 1
