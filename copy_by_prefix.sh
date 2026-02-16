@@ -1,2 +1,0 @@
-python copy_by_prefix.py  /hpc2hdd/home/mpeng885/jerryjiawenl/bowen/GraphArena/results/easy Qwen-7B-1M /hpc2hdd/home/mpeng885/wyy/NPG_Muse-copy/verl/npg_muse_attachments/evaluation/fast/graph_computation_evaluation/GraphArena/eval_results/easy
-python copy_by_prefix.py  /hpc2hdd/home/mpeng885/jerryjiawenl/bowen/GraphArena/results/hard Qwen-7B-1M /hpc2hdd/home/mpeng885/wyy/NPG_Muse-copy/verl/npg_muse_attachments/evaluation/fast/graph_computation_evaluation/GraphArena/eval_results/hard

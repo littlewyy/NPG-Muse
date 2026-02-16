@@ -1,3 +1,0 @@
-Maximum Clique Problem
-Graph Edit Distance
-Travelling Salesman Problem

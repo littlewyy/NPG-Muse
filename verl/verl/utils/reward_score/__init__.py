@@ -44,21 +44,16 @@ def default_compute_score(
     Raises:
         NotImplementedError: If the reward function is not implemented for the given data source.
     """
-    # graph_tasks = ['Connected', 'Diameter', 'Distance', 'GED', 'MCP', 'MCS', 'MIS', 'MVC', 'Neighbor', 'TSP']
     math_tasks = ['Algebra', "Counting & Probability", "Geometry", "Intermediate Algebra", "Number Theory", "Prealgebra", "Precalculus"]
     # data_source = data_source.split('_')[0]
     print(f"data_source: {data_source}")
     if data_source == "openai/gsm8k":
         from . import gsm8k
         res = gsm8k.compute_score(solution_str, ground_truth)
-    # elif data_source in graph_tasks:
-    #     from . import grapharena_repeat_aggressive
-    #     res = grapharena_repeat_aggressive.compute_score(solution_str, ground_truth, extra_info, task_name=data_source)
     elif check_is_graph_task(data_source):
         real_data_source = data_source.split('_')[0]
-        # reward_type是除了real_data_source以外的部分（但是得把_也保留下来）
         easy_hard = data_source.split('_')[1]
-        if easy_hard == "easy" or easy_hard == "hard": # 兼容validation情况
+        if easy_hard == "easy" or easy_hard == "hard": 
             reward_type = '_'.join(data_source.split('_')[2:])
         else:
             reward_type = '_'.join(data_source.split('_')[1:])
