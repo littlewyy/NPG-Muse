@@ -9,7 +9,7 @@
 | Model                                                             | Base                   | Parameters |
 | ----------------------------------------------------------------- | ---------------------- | ---------- |
 | [NPG-Muse-7B](http://modelscope.cn/models/littlewyy/NPG-Muse-7B)     | Qwen2.5-7B-Instruct-1M | 7.62B      |
-| [NPG-Muse-8B](http://modelscope.cn/models/littlewyy/NPG-Muse-8B) | Qwen3-8B           | 8.2B      |
+| [NPG-Muse-8B](http://modelscope.cn/models/littlewyy/NPG-Muse-8B) | Qwen3-8B-Base           | 8.2B      |
 
 ## Quick Start on Training
 
