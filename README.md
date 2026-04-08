@@ -60,7 +60,7 @@ cd verl
 bash verl/recipe/NPG-Muse/sft/run_sft.sh
 ```
 
-#### Stage 2: Reinforcement Learning with Curriculum Learning
+#### Stage 2: Reinforcement Learning
 
 ```bash
 cd verl
